@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background_ligth"
+    android:layout_height="match_parent"
+    tools:context=".Views.RegisterWorkers">
+
+
+    <soup.neumorphism.NeumorphImageView
+        android:id="@+id/rw_show_taked_image"
+        style="@style/Widget.Neumorph.ImageView"
+        android:layout_width="209dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView21"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="354dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rw_show_taked_image"
+        app:neumorph_shapeType="pressed">
+
+        <EditText
+            android:id="@+id/rw_in_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="@string/app_name"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/icon_user"
+            android:drawablePadding="10dp"
+            android:hint="@string/rw_in_name"
+            android:inputType="textPersonName"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/darker_gray" />
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView2"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="354dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphCardView11"
+        app:neumorph_shapeType="pressed">
+
+        <EditText
+            android:id="@+id/rw_in_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="no"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/icon_numbers"
+            android:drawablePadding="10dp"
+            android:hint="@string/rw_in_number"
+            android:inputType="number"
+            android:textColor="@color/text_color"
+            android:textColorHint="@color/darker_gray" />
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neumorphCardView11"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="354dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphCardView21"
+        app:neumorph_shapeType="pressed">
+
+        <Spinner
+            android:id="@+id/rw_areas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/text_color" />
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/rw_take_photo"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="319dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="28dp"
+        android:drawableStart="@drawable/icon_camera"
+        android:drawablePadding="3dp"
+        android:text="@string/rw_btn_cam"
+        android:textColor="@color/text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/neumorphCardView2" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/rw_register_worker"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="322dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="40dp"
+        android:drawableStart="@drawable/icon_worker"
+        android:text="@string/rw_btn_rg"
+        android:textColor="@color/text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rw_take_photo"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

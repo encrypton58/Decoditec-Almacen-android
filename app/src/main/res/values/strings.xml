@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Decoditec Almacen</string>
+    <string name="main_hint_email">Correo</string>
+    <string name="main_hint_pass">Contraseña</string>
+    <string name="main_hint_button">Iniciar Sesión</string>
+
+    <string name="dialog_soe_accept">Aceptar</string>
+
+    <string name="dialog_wait_text">Espere</string>
+
+    <string name="ds_rw">Registrar Trabajador</string>
+    <string name="ds_ro">Salida De Almacen</string>
+    <string name="ds_ri">Registrar En Inventario</string>
+    <string name="ds_ei">Editar Inventario</string>
+
+    <string-array name="areas">
+        <item>Area Del Trabajador</item>
+        <item>Postes</item>
+        <item>Transporte</item>
+        <item>Maquinado</item>
+        <item>Pintura</item>
+        <item>Arco</item>
+        <item>Dados</item>
+        <item>Costura</item>
+        <item>Vigilancia</item>
+        <item>Almacen</item>
+        <item>Mantenimiento</item>
+        <item>Ingenieria</item>
+        <item>Oficinas</item>
+        <item>Montaje</item>
+        <item>Intendencia</item>
+        <item>Taller</item>
+        <item>RHI</item>
+        <item>Carpinteria</item>
+        <item>Jardineria</item>
+        <item>Maquilado</item>
+        <item>Temporal</item>
+    </string-array>
+
+    <string name="rw_btn_cam">Presiona Para Tomar Foto</string>
+    <string name="rw_btn_rg">Registrar Trabajador</string>
+    <string name="rw_in_name">Nombre</string>
+    <string name="rw_in_number">Numero</string>
+
+    <string name="ro_btn_rg">Registrar Salida</string>
+    <string name="ro_in_number">Numero De Trabajador</string>
+    <string name="ro_in_matarial">Material</string>
+    <string name="ro_in_date">Fecha</string>
+
+    <string name="ri_in_code">Codigo</string>
+    <string name="ri_in_can">Cantidad</string>
+    <string name="ri_in_regin">Registrar En Inventario</string>
+
+    <string name="dialog_amount_text">Introduce la cantidad de material a salir</string>
+    <string name="dialog_amount_hint">Cantidad</string>
+
+</resources>

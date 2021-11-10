@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_degree">#AEFFFFFF</color>
+    <color name="danger">#EF1616</color>
+    <color name="pallette_decoditec_blue_strong">#169EF2</color>
+    <color name="pallette_decoditec_blue_medium">#2EA7F2</color>
+    <color name="pallette_decoditec_blue_ligth">#7EC6F2</color>
+    <color name="pallette_decoditec_gray">#F2F2F2</color>
+    <color name="pallette_decoditec_dark">#0D0D0D</color>
+    <color name="darker_gray">#888282</color>
+    <color name="success">#65E85C</color>
+    <color name="background_ligth">#ecf0f3</color>
+    <color name="text_color">#193566</color>
+
+
+</resources>

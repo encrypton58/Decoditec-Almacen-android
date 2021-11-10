@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_ligth"
+    tools:context=".Views.RegisterOut">
+
+    <LinearLayout
+        android:id="@+id/ro_linear_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="351dp"
+            android:layout_height="287dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="10dp">
+
+            <com.budiyev.android.codescanner.CodeScannerView
+                android:id="@+id/ro_scanner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                app:autoFocusButtonVisible="true"
+                app:flashButtonVisible="true"
+                app:frameCornersRadius="20dp" />
+
+        </soup.neumorphism.NeumorphCardView>
+
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/neumorphCardView21"
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="354dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rw_show_taked_image"
+            app:neumorph_shapeType="pressed">
+
+            <AutoCompleteTextView
+                android:id="@+id/ro_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:autofillHints="@string/app_name"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/icon_user"
+                android:drawableEnd="@drawable/icon_close"
+                android:drawablePadding="10dp"
+                android:hint="@string/ro_in_number"
+                android:inputType="textPersonName"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/darker_gray" />
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/neumorphCardView213"
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="354dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:neumorph_shapeType="pressed">
+
+            <EditText
+                android:id="@+id/ro_in_material"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:autofillHints="@string/app_name"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/icon_materials"
+                android:drawablePadding="10dp"
+                android:hint="@string/ro_in_matarial"
+                android:focusable="false"
+                android:clickable="true"
+                android:inputType="text"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/darker_gray" />
+
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/neumorphCardView212"
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="354dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:neumorph_shapeType="pressed">
+
+            <EditText
+                android:id="@+id/ro_in_dates"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:autofillHints="@string/app_name"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/icon_date"
+                android:drawablePadding="10dp"
+                android:hint="@string/ro_in_date"
+                android:inputType="date"
+                android:focusable="false"
+                android:clickable="true"
+                android:maxLines="1"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/darker_gray" />
+
+
+        </soup.neumorphism.NeumorphCardView>
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/ro_rg"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="319dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/icon_exit_alm"
+            android:drawablePadding="3dp"
+            android:text="@string/ro_btn_rg"
+            android:textColor="@color/text_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.315"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/neumorphCardView2" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
